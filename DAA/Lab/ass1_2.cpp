@@ -48,6 +48,16 @@ void merge(int *arr, int l, int r)
       arr[main_arr_ind++] = left_arr[ind1++];
       ind2++;
     }
+    else{
+    	if(left_arr[ind1]==0 && right_arr[ind2]==0){
+    		ind1++;
+    		ind2++;
+    	}
+    	else{
+    		arr[main_arr_ind++] = left_arr[ind1++];
+    		arr[main_arr_ind++] = right_arr[ind2++];
+    	}
+    }
   }
   while (ind1 < len1)
   {
