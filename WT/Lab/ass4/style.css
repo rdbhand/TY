@@ -1,3 +1,4 @@
+
 *{
     margin: 0;
     padding: 0;
@@ -5,9 +6,7 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-body{
-    background-color: black;
-}
+
 .form_ele label{
     font-weight: bold;
 }
@@ -17,8 +16,9 @@ form{
     flex-direction: column;
     width:400px;
     margin: auto;
-    background-color: rgb(135, 218, 212);
+    background-color:skyblue;
     padding: 10px;
+    border:1px solid blue;
 }
 
 .form_ele{
@@ -38,9 +38,10 @@ h1{
     width:400px;
     margin: auto;
     text-align: center;
-    background-color: rgb(210, 163, 226);
+    background-color:skyblue;
     padding: 10px;
     font-style: italic;
+    border:1px solid blue;
 }
 
 .bt_box{
@@ -53,8 +54,17 @@ h1{
 .bt_box button{
     padding:5px;
     cursor: pointer;
+    width:150px;
 }
 
 .bt_box button:hover{
-    background-color: rgb(95, 95, 210);
+    background-color: rgb(238, 102, 78);
+}
+
+[type="text"],[type="date"],[type="email"],[type="password"],[type="number"],[type="file"]{
+    width:200px;
+}
+
+select{
+    width: 200px;
 }
