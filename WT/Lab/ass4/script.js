@@ -13,7 +13,7 @@ function validate(){
     }
     name=document.getElementById("dob").value;
     if(name==""){
-      return alert('Enter DOB ! ');
+      return alert('Enter DOB !');
     }
     name=document.getElementById("age").value;
     if(name==""){
