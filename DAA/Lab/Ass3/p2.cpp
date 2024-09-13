@@ -11,14 +11,17 @@
 #include<iostream>
 using namespace std;
 
+bool dp[100][100];
+
 bool isSum(int sum, int* s,int n){
     if(sum==0) return true;
     if(sum>0 && n==0) return false;
+    if(dp[n-1][sum]!=-1) return dp[n-1][sum];
     if(s[n]>sum){
-        return isSum(sum,s,n-1);
+        return dp[n-1][sum]=isSum(sum,s,n-1);
     }
     else{
-        return (isSum(sum,s,n-1) || isSum(sum-s[n],s,n-1));
+        return dp[n-1][sum]=(isSum(sum,s,n-1) || isSum(sum-s[n],s,n-1));
     }
 }
 
@@ -32,7 +35,7 @@ int main(){
     int sum;
     cin>>sum;
     bool res=isSum(sum,s,n-1);
-    (res==1)?cout<<"True"<<endl;:cout<<"False"<<endl;
+    (res==1)?cout<<"True"<<endl:cout<<"False"<<endl;
     
     return 0;
 }
