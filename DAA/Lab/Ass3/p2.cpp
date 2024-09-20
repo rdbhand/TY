@@ -17,7 +17,7 @@ bool isSum(int sum, int* s,int n){
     if(sum==0) return true;
     if(sum>0 && n==0) return false;
     if(dp[n-1][sum]!=-1) return dp[n-1][sum];
-    if(s[n]>sum){
+    if(s[n]>sum){3
         return dp[n-1][sum]=isSum(sum,s,n-1);
     }
     else{
