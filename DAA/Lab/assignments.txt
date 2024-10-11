@@ -103,9 +103,7 @@ D 1. Implement program to find all distinct subsets of a
 given set using Bit Masking Approach.
 Statement Given an array of integers arr[], The task is 
 to find all its subsets. The subset cannot contain 
-CO4
-
-duplicate elements, so any repeated subset should be 
+CO4 duplicate elements, so any repeated subset should be 
 considered only once in the output.
 Input: S = {1, 2, 2} Output: {}, {1}, {2}, {1, 2}, {2, 
 2}, {1, 2,2}
@@ -135,6 +133,7 @@ Output: // this space denotes null element.
 Input: 1 2
 Output: 1 2 1 2
 CO4
+
 E Mini Project:-Implement CA assignment assigned in group as a 
 CO301 (DAA theory subject) and store in source code in git 
 repository. 
